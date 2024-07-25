@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import Move from "./Move";
 import { useEffect, useState } from "react";
 
 export default function Movedetails() {
