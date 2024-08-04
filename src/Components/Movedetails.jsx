@@ -4,13 +4,18 @@ import { useEffect, useState } from "react";
 export default function Movedetails() {
   const [move, setmove] = useState([]);
   const param = useParams();
+  // console.log(param.moveId);
+  // console.log(move);
 
   useEffect(() => {
     fetch(
       `https://api.themoviedb.org/3/movie/${param.moveId}?api_key=5b6d2f21c07b6b480b047d8a71c3824d`
     )
       .then((response) => response.json())
-      .then((data) => setmove(data));
+      .then((data) => {
+        console.log(data);
+        setmove(data);
+      });
   }, []);
 
   return (

@@ -3,6 +3,7 @@ import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Movelist from "./Components/Movelist";
 import Movedetails from "./Components/Movedetails";
+import About from "./Components/About";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             </>
           }
         ></Route>
+        <Route path="about" element={<About />}></Route>
       </Routes>
       <Footer />
     </>

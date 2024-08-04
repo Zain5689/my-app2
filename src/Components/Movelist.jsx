@@ -10,7 +10,6 @@ export default function Movelist() {
     fetch(Api)
       .then((response) => response.json())
       .then((data) => {
-        //   console.log(data.results);
         setmove(data.results);
       });
   };
